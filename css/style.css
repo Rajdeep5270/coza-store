@@ -1,0 +1,212 @@
+/* general css  */
+:root {
+    --white-color: #ffffff;
+    --text-light: #B2B2B2;
+    --text-black: #333333;
+    --text-hover: #6c7ae0;
+    --text-grey: #888888;
+    --btn-bg: #E6E6E6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", serif;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* topbar section  */
+
+/* .topbar .topbar-content .shipping , .topbar .topbar-content ul li a {
+    font-size: 12px;
+    color: var(--text-light);
+}
+
+.topbar .topbar-content ul li a {
+    padding: 0 20px;
+    border-left: 1px solid var(--text-light);
+    border-right: 1px solid var(--text-light);
+} */
+
+/* navigation section  */
+
+.navigation .nav-image nav ul li a {
+    color: var(--text-black );
+    font-size: 14px;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+}
+
+.navigation .nav-image nav ul li .special {
+    color: var(--text-hover);
+}
+
+.navigation .navigation-content .icons i {
+    font-size: 21px;
+    color: var(--text-black);
+    padding: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.navigation .navigation-content .toggle a i {
+    color: var(--text-black);
+    transition: all 0.3s ease;
+}
+
+.navigation .nav-image nav ul li a:hover , .navigation .navigation-content .icons i:hover , .navigation .navigation-content .toggle a i:hover {
+    color: var(--text-hover);
+}
+
+/* banner section  */
+
+.banner {
+    height: 900px;
+}
+
+.slide1, .slide2 , .slide3 {
+    background-image: url('../images/slide-01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+}
+
+.slide2 {
+    background-image: url('../images/slide-02.jpg');
+}
+
+.slide3 {
+    background-image: url('../images/slide-03.jpg');
+}
+
+.banner .text a {
+    background-color: var(--text-hover);
+    transition: all 0.3s ease-in-out;
+}
+
+.banner .text a:hover {
+    background-color: var(--text-black);
+}
+
+/* shopnow section  */
+
+.shopnow .shopnow-content .image::after {
+    content: '';
+    position: absolute;
+    background-color: #6c79e0b0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.shopnow .shopnow-content .image:hover::after {
+    opacity: 1;
+}
+
+.shopnow .shopnow-content .image .image-content h2 {
+    color: var(--text-black);
+    transition: all 0.3s ease-in-out;
+}
+
+.shopnow .shopnow-content .image .image-content {
+    color: var(--text-grey);
+    transition: all 0.3s ease-in-out;
+}
+
+.shopnow .shopnow-content .image:hover .image-content h2 , .shopnow .shopnow-content .image:hover .image-content {
+    color: var(--white-color);
+}
+
+.shopnow .shopnow-content .image .image-content .shop-btn {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.shopnow .shopnow-content .image:hover .shop-btn {
+    opacity: 1;
+}
+
+/* product section  */
+
+.product .product-head .product-menu nav ul li a {
+    transition: border 0.3s;
+}
+
+.product .product-head .product-menu nav ul li a:hover {
+    border-bottom: 1px solid;
+}
+
+.product .product-head .product-menu .search span {
+    color: var(--text-grey);
+    transition: all 0.3s ease-in-out;
+}
+
+.product .product-head .product-menu .search span:hover {
+    color: var(--white-color);
+    background-color: var(--text-hover);
+}
+
+.product .product-content .image .image-text {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+}
+
+.product .product-content .image:hover .image-text {
+    top: 85%;
+}
+
+.product .load-btn a {
+    color: var(--text-black);
+    background-color: var(--btn-bg);
+    transition: all 0.3s ease-in-out;
+}
+
+.product .load-btn a:hover {
+    color: var(--white-color);
+    background-color: var(--text-black);
+}
+
+/* footer section  */
+
+.footer .newsletter #email {
+    border: none;
+    border-bottom: 1px solid var(--text-grey);
+    width: 100%;
+}
+
+.footer .newsletter .mail-btn a {
+    background-color: var(--text-hover);
+    color: var(--white-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.footer .newsletter .mail-btn a:hover {
+    background-color: var(--white-color);
+    color: var(--text-hover);
+}
+
+/* end of this website  */

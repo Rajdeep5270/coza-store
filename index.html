@@ -1,0 +1,630 @@
+<!-- website link
+https://preview.colorlib.com/theme/cozastore/ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coza Store</title>
+    <!-- fonts css -->
+    <link rel="stylesheet" href="fonts/poppins/stylesheet.css" type="text/css">
+    <!-- remix icons css  -->
+    <link rel="stylesheet" href="remix/fonts/remixicon.css" type="text/css">
+    <!-- bootstrap css  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <!-- max-width css  -->
+    <link rel="stylesheet" href="css/max-width.css" type="text/css">
+    <!-- main css  -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <!-- topbar section  -->
+        <!-- <section class="topbar bg-dark">
+            <div class="container">
+                <div class="topbar-content d-md-flex justify-content-between align-items-center py-2 d-block">
+                    <div class="shipping">
+                        <p class="mb-0">Free shipping for standard offer over $100</p>
+                    </div>
+                    <ul class="d-flex mb-0">
+                        <li><a href="javascript:void(0)">Help & FAQs</a></li>
+                        <li><a href="javascript:void(0)">My Account</a></li>
+                        <li><a href="javascript:void(0)">EN</a></li>
+                        <li><a href="javascript:void(0)">USD</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- navigation section  -->
+        <section class="navbar navbar-expand-lg py-3 position-absolute top-0 start-0 z-2 w-100">
+            <div class="container">
+                <div class="logo d-flex align-items-center">
+                    <a href="javascript:void(0)"><img src="images/logo-01.png.webp" alt=""></a>
+                </div>
+                <div class="icons order-lg-2 mx-2">
+                    <i class="ri-search-line mx-2 fs-5"></i>
+                    <i class="ri-shopping-cart-fill mx-2 fs-5"></i>
+                    <i class="ri-heart-line mx-2 fs-5"></i>
+                </div>
+                <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <a href="javascript:void(0)" class="navbar-toggler-icon"></a>
+                </div>
+                <div class="login order-lg-3">
+                    <a href="javascript:void(0)" class="btn btn btn-outline-dark" data-bs-toggle="modal"
+                        data-bs-target="#login">Login</a>
+                    <a href="javascript:void(0)" class="btn btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#sign-up">Sign Up</a>
+                </div>
+                <nav class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="javascript:void(0)" class="mx-3 text-black nav-link">Home</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="mx-3 text-black nav-link">Shop</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="mx-3 text-black nav-link">Features</a>
+                        </li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="mx-3 text-black nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="mx-3 text-black nav-link"
+                                data-bs-toggle="offcanvas" data-bs-target="#about">About</a>
+                        </li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="mx-3 text-black nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- about offcanvas section  -->
+        <section class="offcanvas offcanvas-end" id="about" data-bs-backdrop="static" data-bs-scroll="true">
+            <div class="offcanvas-header">
+                <h2>About</h2>
+                <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="offcanvas"></a>
+            </div>
+            <div class="offcanvas-body">
+                <p>The Developer of This Website is Rajdeep Singh</p>
+            </div>
+        </section>
+
+        <!-- login modal section  -->
+        <section class="modal fade" id="login" data-bs-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Login</h2>
+                        <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="modal"></a>
+                    </div>
+                    <div class="modal-body">
+                        <p>Login Content we can make here</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="javascript:void(0)" class="btn btn-outline-dark" data-bs-dismiss="modal">Submit</a>
+                        <a href="javascript:void(0)" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#sign-up">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sign up modal section  -->
+        <section class="modal fade" id="sign-up" data-bs-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Sign Up</h2>
+                        <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="modal"></a>
+                    </div>
+                    <div class="modal-body">
+                        <p>Sign up Content we can make here</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="javascript:void(0)" class="btn btn-outline-dark" data-bs-dismiss="modal">Submit</a>
+                        <a href="javascript:void(0)" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#login">Login</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- banner section  -->
+        <section class="banner carousel slide carousel-fade position-relativesssss" id="slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <a href="javascript:void(0)" class="active" data-bs-slide-to="0" data-bs-target="#slide"></a>
+                <a href="javascript:void(0)" data-bs-slide-to="1" data-bs-target="#slide"></a>
+                <a href="javascript:void(0)" data-bs-slide-to="2" data-bs-target="#slide"></a>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="slide1 d-flex justify-content-start align-items-center">
+                        <div class="container">
+                            <div class="text">
+                                <p class="h4">Women Collection 2018</p>
+                                <h2 class="display-3 my-4">NEW SEASON</h2>
+                                <a href="javascript:void(0)" class="btn rounded-pill px-4 text-light">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slide2 d-flex justify-content-start align-items-center">
+                        <div class="container">
+                            <div class="text">
+                                <p class="h4">Men New-Season</p>
+                                <h2 class="display-3 my-4">JACKET & COATS</h2>
+                                <a href="javascript:void(0)" class="btn rounded-pill px-4 text-light">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slide3 d-flex justify-content-start align-items-center">
+                        <div class="container">
+                            <div class="text">
+                                <p class="h4">Men Collection 2018</p>
+                                <h2 class="display-3 my-4">NEW ARRIVALS</h2>
+                                <a href="javascript:void(0)" class="btn rounded-pill px-4 text-light">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slide">
+                    <span class="carousel-control-prev-icon"></span>
+                </div>
+                <div class="carousel-control-next" data-bs-slide="next" data-bs-target="#slide">
+                    <span class="carousel-control-next-icon"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- shopnow section  -->
+        <section class="shopnow my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="shopnow-content border my-3">
+                            <div class="image position-relative">
+                                <img src="images/shop-1.webp" alt="">
+                                <div class="image-content position-absolute top-0 start-0 h-100 w-100 p-4 z-1">
+                                    <h2 class="fw-semibold">Women</h2>
+                                    <p>Spring 2018</p>
+                                    <div class="shop-btn d-flex align-items-end h-50 w-50">
+                                        <a href="javascript:void(0)"
+                                            class="text-white border-bottom border-2 fw-semibold">SHOP NOW</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="shopnow-content border my-3">
+                            <div class="image position-relative">
+                                <img src="images/shop-2.webp" alt="">
+                                <div class="image-content position-absolute top-0 start-0 h-100 w-100 p-4 z-1">
+                                    <h2 class="fw-semibold">Men</h2>
+                                    <p>Spring 2018</p>
+                                    <div class="shop-btn d-flex align-items-end h-50 w-50">
+                                        <a href="javascript:void(0)"
+                                            class="text-white border-bottom border-2 fw-semibold">SHOP NOW</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="shopnow-content border my-3">
+                            <div class="image position-relative">
+                                <img src="images/shop-3.webp" alt="">
+                                <div class="image-content position-absolute top-0 start-0 h-100 w-100 p-4 z-1">
+                                    <h2 class="fw-semibold">Accessories</h2>
+                                    <p>New Trend</p>
+                                    <div class="shop-btn d-flex align-items-end h-50 w-50">
+                                        <a href="javascript:void(0)"
+                                            class="text-white border-bottom border-2 fw-semibold">SHOP NOW</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- product section  -->
+        <section class="product">
+            <div class="container">
+                <div class="product-head">
+                    <h2 class="display-6 fw-semibold">Product Overview</h2>
+                    <div class="product-menu d-flex justify-content-between align-items-center position-relative">
+                        <div class="toggle d-lg-none">
+                            <i class="ri-menu-line"></i>
+                        </div>
+                        <nav>
+                            <ul class="d-flex ps-0 my-4">
+                                <li><a href="javascript:void(0)" class="me-4 text-black-50">All Products</a></li>
+                                <li><a href="javascript:void(0)" class="me-4 text-black-50">Women</a></li>
+                                <li><a href="javascript:void(0)" class="me-4 text-black-50">Men</a></li>
+                                <li><a href="javascript:void(0)" class="me-4 text-black-50">Bag</a></li>
+                                <li><a href="javascript:void(0)" class="me-4 text-black-50">Shoes</a></li>
+                                <li><a href="javascript:void(0)" class="me-4 text-black-50">Watches</a></li>
+                            </ul>
+                        </nav>
+                        <div class="search">
+                            <span class="py-2 px-3 border"><i class="ri-filter-3-line"></i>Filter</span>
+                            <span class="py-2 px-3 border"><i class="ri-search-line"></i>Search</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="product-content my-5 ">
+                            <div class="image position-relative overflow-hidden">
+                                <img src="images/product-01.jpg.webp" alt="">
+                                <div class="image-text">
+                                    <a href="javascript:void(0)" class="py-2 px-4 rounded-pill bg-light text-dark">Quick
+                                        View</a>
+                                </div>
+                            </div>
+                            <div class="product-details d-flex justify-content-between my-3">
+                                <div class="product-text">
+                                    <p class="mb-2 text-black-50">Esprit Ruffle Shirt</p>
+                                    <span class="text-dark">$16.64</span>
+                                </div>
+                                <i class="ri-heart-line text-black-50"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="product-content my-5">
+                            <div class="image position-relative overflow-hidden">
+                                <img src="images/product-02.jpg.webp" alt="">
+                                <div class="image-text">
+                                    <a href="javascript:void(0)" class="py-2 px-4 rounded-pill bg-light text-dark">Quick
+                                        View</a>
+                                </div>
+                            </div>
+                            <div class="product-details d-flex justify-content-between my-3">
+                                <div class="product-text">
+                                    <p class="mb-2 text-black-50">Herschel supply</p>
+                                    <span class="text-dark">$35.31</span>
+                                </div>
+                                <i class="ri-heart-line text-black-50"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="product-content my-5">
+                            <div class="image position-relative overflow-hidden">
+                                <img src="images/product-03.jpg.webp" alt="">
+                                <div class="image-text">
+                                    <a href="javascript:void(0)" class="py-2 px-4 rounded-pill bg-light text-dark">Quick
+                                        View</a>
+                                </div>
+                            </div>
+                            <div class="product-details d-flex justify-content-between my-3">
+                                <div class="product-text">
+                                    <p class="mb-2 text-black-50">Only Check Trouser</p>
+                                    <span class="text-dark">$25.50</span>
+                                </div>
+                                <i class="ri-heart-line text-black-50"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="product-content my-5">
+                            <div class="image position-relative overflow-hidden">
+                                <img src="images/product-04.jpg.webp" alt="">
+                                <div class="image-text">
+                                    <a href="javascript:void(0)" class="py-2 px-4 rounded-pill bg-light text-dark">Quick
+                                        View</a>
+                                </div>
+                            </div>
+                            <div class="product-details d-flex justify-content-between my-3">
+                                <div class="product-text">
+                                    <p class="mb-2 text-black-50">Classic Trench Coat</p>
+                                    <span class="text-dark">$75.00</span>
+                                </div>
+                                <i class="ri-heart-line text-black-50"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="product-content my-5 ">
+                            <div class="image position-relative overflow-hidden">
+                                <img src="images/product-05.jpg.webp" alt="">
+                                <div class="image-text">
+                                    <a href="javascript:void(0)" class="py-2 px-4 rounded-pill bg-light text-dark">Quick
+                                        View</a>
+                                </div>
+                            </div>
+                            <div class="product-details d-flex justify-content-between my-3">
+                                <div class="product-text">
+                                    <p class="mb-2 text-black-50">Front Pocket Jumper</p>
+                                    <span class="text-dark">$34.75</span>
+                                </div>
+                                <i class="ri-heart-line text-black-50"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="product-content my-5">
+                            <div class="image position-relative overflow-hidden">
+                                <img src="images/product-06.jpg.webp" alt="">
+                                <div class="image-text">
+                                    <a href="javascript:void(0)" class="py-2 px-4 rounded-pill bg-light text-dark">Quick
+                                        View</a>
+                                </div>
+                            </div>
+                            <div class="product-details d-flex justify-content-between my-3">
+                                <div class="product-text">
+                                    <p class="mb-2 text-black-50">Vintage Inspired Classic</p>
+                                    <span class="text-dark">$93.20</span>
+                                </div>
+                                <i class="ri-heart-line text-black-50"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="product-content my-5">
+                            <div class="image position-relative overflow-hidden">
+                                <img src="images/product-07.jpg.webp" alt="">
+                                <div class="image-text">
+                                    <a href="javascript:void(0)" class="py-2 px-4 rounded-pill bg-light text-dark">Quick
+                                        View</a>
+                                </div>
+                            </div>
+                            <div class="product-details d-flex justify-content-between my-3">
+                                <div class="product-text">
+                                    <p class="mb-2 text-black-50">Vintage Inspired Classic</p>
+                                    <span class="text-dark">$52.66</span>
+                                </div>
+                                <i class="ri-heart-line text-black-50"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="product-content my-5">
+                            <div class="image position-relative overflow-hidden">
+                                <img src="images/product-08.jpg.webp" alt="">
+                                <div class="image-text">
+                                    <a href="javascript:void(0)" class="py-2 px-4 rounded-pill bg-light text-dark">Quick
+                                        View</a>
+                                </div>
+                            </div>
+                            <div class="product-details d-flex justify-content-between my-3">
+                                <div class="product-text">
+                                    <p class="mb-2 text-black-50">Pieces Metallic Printed</p>
+                                    <span class="text-dark">$18.96</span>
+                                </div>
+                                <i class="ri-heart-line text-black-50"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="product-content my-5 ">
+                            <div class="image position-relative overflow-hidden">
+                                <img src="images/product-09.jpg.webp" alt="">
+                                <div class="image-text">
+                                    <a href="javascript:void(0)" class="py-2 px-4 rounded-pill bg-light text-dark">Quick
+                                        View</a>
+                                </div>
+                            </div>
+                            <div class="product-details d-flex justify-content-between my-3">
+                                <div class="product-text">
+                                    <p class="mb-2 text-black-50">Converse All Star Hi Plimsolls</p>
+                                    <span class="text-dark">$75.00</span>
+                                </div>
+                                <i class="ri-heart-line text-black-50"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="product-content my-5">
+                            <div class="image position-relative overflow-hidden">
+                                <img src="images/product-10.jpg.webp" alt="">
+                                <div class="image-text">
+                                    <a href="javascript:void(0)" class="py-2 px-4 rounded-pill bg-light text-dark">Quick
+                                        View</a>
+                                </div>
+                            </div>
+                            <div class="product-details d-flex justify-content-between my-3">
+                                <div class="product-text">
+                                    <p class="mb-2 text-black-50">Femme T-Shirt In Stripe</p>
+                                    <span class="text-dark">$25.85</span>
+                                </div>
+                                <i class="ri-heart-line text-black-50"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="product-content my-5">
+                            <div class="image position-relative overflow-hidden">
+                                <img src="images/product-11.jpg.webp" alt="">
+                                <div class="image-text">
+                                    <a href="javascript:void(0)" class="py-2 px-4 rounded-pill bg-light text-dark">Quick
+                                        View</a>
+                                </div>
+                            </div>
+                            <div class="product-details d-flex justify-content-between my-3">
+                                <div class="product-text">
+                                    <p class="mb-2 text-black-50">Herschel supply</p>
+                                    <span class="text-dark">$63.15</span>
+                                </div>
+                                <i class="ri-heart-line text-black-50"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="product-content my-5">
+                            <div class="image position-relative overflow-hidden">
+                                <img src="images/product-12.jpg.webp" alt="">
+                                <div class="image-text">
+                                    <a href="javascript:void(0)" class="py-2 px-4 rounded-pill bg-light text-dark">Quick
+                                        View</a>
+                                </div>
+                            </div>
+                            <div class="product-details d-flex justify-content-between my-3">
+                                <div class="product-text">
+                                    <p class="mb-2 text-black-50">Herschel supply</p>
+                                    <span class="text-dark">$63.15</span>
+                                </div>
+                                <i class="ri-heart-line text-black-50"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="product-content my-5 ">
+                            <div class="image position-relative overflow-hidden">
+                                <img src="images/product-13.jpg.webp" alt="">
+                                <div class="image-text">
+                                    <a href="javascript:void(0)" class="py-2 px-4 rounded-pill bg-light text-dark">Quick
+                                        View</a>
+                                </div>
+                            </div>
+                            <div class="product-details d-flex justify-content-between my-3">
+                                <div class="product-text">
+                                    <p class="mb-2 text-black-50">T-Shirt with Sleeve</p>
+                                    <span class="text-dark">$18.49</span>
+                                </div>
+                                <i class="ri-heart-line text-black-50"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="product-content my-5">
+                            <div class="image position-relative overflow-hidden">
+                                <img src="images/product-02.jpg.webp" alt="">
+                                <div class="image-text">
+                                    <a href="javascript:void(0)" class="py-2 px-4 rounded-pill bg-light text-dark">Quick
+                                        View</a>
+                                </div>
+                            </div>
+                            <div class="product-details d-flex justify-content-between my-3">
+                                <div class="product-text">
+                                    <p class="mb-2 text-black-50">Pretty Little Thing</p>
+                                    <span class="text-dark">$54.79</span>
+                                </div>
+                                <i class="ri-heart-line text-black-50"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="product-content my-5">
+                            <div class="image position-relative overflow-hidden">
+                                <img src="images/product-03.jpg.webp" alt="">
+                                <div class="image-text">
+                                    <a href="javascript:void(0)" class="py-2 px-4 rounded-pill bg-light text-dark">Quick
+                                        View</a>
+                                </div>
+                            </div>
+                            <div class="product-details d-flex justify-content-between my-3">
+                                <div class="product-text">
+                                    <p class="mb-2 text-black-50">Mini Silver Mesh Watch</p>
+                                    <span class="text-dark">$86.85</span>
+                                </div>
+                                <i class="ri-heart-line text-black-50"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="product-content my-5">
+                            <div class="image position-relative overflow-hidden">
+                                <img src="images/product-04.jpg.webp" alt="">
+                                <div class="image-text">
+                                    <a href="javascript:void(0)" class="py-2 px-4 rounded-pill bg-light text-dark">Quick
+                                        View</a>
+                                </div>
+                            </div>
+                            <div class="product-details d-flex justify-content-between my-3">
+                                <div class="product-text">
+                                    <p class="mb-2 text-black-50">Square Neck Back</p>
+                                    <span class="text-dark">$29.64</span>
+                                </div>
+                                <i class="ri-heart-line text-black-50"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="load-btn text-center my-2 mb-5">
+                    <a href="javascript:void(0)" class="py-2 px-5 rounded-pill">Load More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark">
+        <!-- footer section  -->
+        <section class="footer py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="categories">
+                            <div class="title">
+                                <h4 class="text-white">Categories</h4>
+                            </div>
+                            <nav class="my-4">
+                                <ul class="ps-0 mb-0">
+                                    <li><a href="javascript:void(0)" class="my-2 text-white-50">Women</a></li>
+                                    <li><a href="javascript:void(0)" class="my-2 text-white-50">Men</a></li>
+                                    <li><a href="javascript:void(0)" class="my-2 text-white-50">Shoes</a></li>
+                                    <li><a href="javascript:void(0)" class="my-2 text-white-50">Watches</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="categories">
+                            <div class="title">
+                                <h4 class="text-white">Help</h4>
+                            </div>
+                            <nav class="my-4">
+                                <ul class="ps-0 mb-0">
+                                    <li><a href="javascript:void(0)" class="my-2 text-white-50">Track Order</a></li>
+                                    <li><a href="javascript:void(0)" class="my-2 text-white-50">Shipping</a></li>
+                                    <li><a href="javascript:void(0)" class="my-2 text-white-50">Returns</a></li>
+                                    <li><a href="javascript:void(0)" class="my-2 text-white-50">FAQ's</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="touch">
+                            <h4 class="text-white">Get in Touch</h4>
+                            <p class="text-white-50 my-4 font-monospace">Any questions? Let us know in store at 8th
+                                floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879</p>
+                            <div class="icons text-white-50 fs-5">
+                                <i class="ri-facebook-fill me-3"></i>
+                                <i class="ri-instagram-line me-3"></i>
+                                <i class="ri-pinterest-line me-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="newsletter">
+                            <h4 class="text-white">NEWSLETTER</h4>
+                            <input type="text" placeholder="email@example.com" class="bg-transparent pb-2 mt-5 mb-3"
+                                id="email">
+                            <div class="mail-btn">
+                                <a href="javascript:void(0)" class="py-2 px-4 rounded-pill">SUBSCRIBE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- copyright section  -->
+        <section class="copyright">
+            <div class="container">
+                <div class="copyright-content text-center py-5 text-white-50">
+                    <p class="font-monospace">Copyright &copy;2024 All Rights are Reserved.</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- bootstrap cdn  -->
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+</body>
+
+</html>
